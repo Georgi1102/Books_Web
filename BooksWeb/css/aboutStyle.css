@@ -11,11 +11,15 @@ body{
    /* font: 15px/1.5 Arial, Helvetica, sans-serif;*/
 }
 
+a {
+	text-decoration: none;
+}
+
 /* Global */
 .container{
     width: 80%;
     margin: auto;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 ul
@@ -26,7 +30,12 @@ ul
 
 .button_1
 {
-    height: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	/* align-content: center; */
+	/* justify-content: center; */
+	padding: 10px;
+    line-height: 30px;
     background: #ff002b;
     border: none;
     padding-left: 40px;
@@ -42,11 +51,11 @@ ul
 /* Header **/
 
 header{
-    background-color:#2a3338;    
+    background-color:#2a3338;
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #e8491d 3px solid; 
+    border-bottom: #e8491d 3px solid;
 }
 
 header a
@@ -61,7 +70,7 @@ header li
 {
    float: left;
    display: inline;
-   padding: 0 20px 0 20px;  
+   padding: 0 20px 0 20px;
 }
 
 header #branding
@@ -89,13 +98,13 @@ header .highlight
 header .current a
 {
     color:rgb(154, 223, 25);
-    font-weight: bold;      
+    font-weight: bold;
 }
 
 header .currHome a
 {
     color:rgb(0, 12, 179);
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 header .currServices a
@@ -119,7 +128,7 @@ header a:hover
     background: #026daf;
 }
 
-#subscripiton h1{   
+#subscripiton h1{
     float: left;
     margin-top: 10px;
     margin-left: 400px;
@@ -136,7 +145,7 @@ header a:hover
     margin-left: -70px;
     background-color:rgb(190, 190, 190);
     text-align: left;
-    
+
 }
 
 
@@ -156,18 +165,3 @@ footer
     background-color: #026daf;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
