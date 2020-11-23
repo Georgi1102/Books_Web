@@ -19,6 +19,10 @@ body{
    /* font: 15px/1.5 Arial, Helvetica, sans-serif;*/
 }
 
+a {
+	text-decoration: none;
+}
+
 /* Global */
 .container{
     width: 80%;
@@ -189,6 +193,9 @@ header a:hover
     width: 150px;
 }
 
+/* 	Added text-decoration none for all anchors/links (lines 22-24)
+ 	if needed, change text-decoration only in local scope */
+
 footer
 {
     padding: 20px;
@@ -200,32 +207,46 @@ footer
 }
 
 footer .socials {
-	width: 50px;
 	margin: 0 auto;
 }
 
 footer .socials .button {
-	margin: 10px 0px;
+	transition: width 0.3s ease-out;
+	margin: 0px 10px;
+	display: inline-block;
+	border-radius: 50px;
+	width: 50px;
+	overflow: hidden;
+	text-align: left;
 }
 
 footer .socials .button i {
 	line-height: 50px;
+	margin-left: -1px;
 	text-align: center;
-	background-color: white;
+	color: white;
 	width: 50px;
 	font-size: 26px;
 	border-radius: 100%;
-	box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-footer .socials .button:nth-child(1) i{color: #4267B2;}
-footer .socials .button:nth-child(2) i{color: #1DA1F2;}
-footer .socials .button:nth-child(3) i{color: #E1306C;}
-
-footer .socials .button:hover i {
-	color: white;
+footer .socials .button span {
+	margin: 0px 20px 0px 10px;
+	font-size: 22px;
+	color: rgba(0,0,0,0);
 }
 
-footer .socials .button:nth-child(1):hover i{background-color: #4267B2;}
-footer .socials .button:nth-child(2):hover i{background-color: #1DA1F2;}
-footer .socials .button:nth-child(3):hover i{background-color: #E1306C;}
+footer .socials .button:nth-child(1) i{background-color: #4267B2;}
+footer .socials .button:nth-child(2) i{background-color: #1DA1F2;}
+footer .socials .button:nth-child(3) i{background-color: #E1306C;}
+
+footer .socials .button:nth-child(1):hover span{color: #4267B2;}
+footer .socials .button:nth-child(2):hover span{color: #1DA1F2;}
+footer .socials .button:nth-child(3):hover span{color: #E1306C;}
+
+footer .socials .button:hover {
+	background-color: white;
+	width: auto;
+	max-width: 200px;
+}
