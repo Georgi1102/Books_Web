@@ -23,7 +23,7 @@ body{
 .container{
     width: 80%;
     margin: auto;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 ul
@@ -49,11 +49,11 @@ ul
 /* Header **/
 
 header{
-    background-color:#2a3338;    
+    background-color:#2a3338;
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #e8491d 3px solid; 
+    border-bottom: #e8491d 3px solid;
 }
 
 header a
@@ -68,7 +68,7 @@ header li
 {
    float: left;
    display: inline;
-   padding: 0 20px 0 20px;  
+   padding: 0 20px 0 20px;
 }
 
 header #branding
@@ -96,25 +96,25 @@ header .highlight
 header .current a
 {
     color:rgb(154, 223, 25);
-    font-weight: bold;      
+    font-weight: bold;
 }
 
 header .secondCurr a
 {
     color:rgb(21, 182, 101);
-    font-weight: bold;      
+    font-weight: bold;
 }
 
 header  .thirdCurr a
 {
     color: red;
-    font-weight: bold;      
+    font-weight: bold;
 }
 
 header  .fourthCurr a
 {
     color: rgb(0, 132, 184);
-    font-weight: bold;      
+    font-weight: bold;
 }
 
 header a:hover
@@ -130,7 +130,7 @@ header a:hover
     min-height: 400px;
     background: url('../Images/book_showcase.jpg') no-repeat 0 -400px;
     text-align: center;
-    color: #ffffff;    
+    color: #ffffff;
 }
 
 #showcase h1
@@ -154,7 +154,7 @@ header a:hover
     background: #35424a;
 }
 
-#subscripiton h1{   
+#subscripiton h1{
     float: left;
 }
 
@@ -189,55 +189,43 @@ header a:hover
     width: 150px;
 }
 
-
 footer
 {
     padding: 20px;
     margin-top: 20px;
     color: #ffffff;
-    background-color: rgb(5, 72, 88); 
+    background-color: rgb(5, 72, 88);
     text-align: center;
+	white-space: nowrap;
 }
 
-footer .wrapper .button:hover{
-    width: 20px;
+footer .socials {
+	width: 50px;
+	margin: 0 auto;
 }
 
-footer .wrapper .icon{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-    transition:all 0.3s ease-out;
+footer .socials .button {
+	margin: 10px 0px;
 }
 
-footer .wrapper .button:nth-child(1):hover.icon{ background: #4267b2; }
-footer .wrapper .button:nth-child(2):hover.icon{ background: #1da1f2; }
-footer .wrapper .button:nth-child(3):hover.icon{ background: #e1306c; }
-
-footer .wrapper.utton.icon i{
-    font-size: 25px;
-    line-height: 60px;
-    transition: all 0.3s ease-out;
+footer .socials .button i {
+	line-height: 50px;
+	text-align: center;
+	background-color: white;
+	width: 50px;
+	font-size: 26px;
+	border-radius: 100%;
+	box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-footer .wrapper .button:nth-child(1) span{color: #4267B2;}
-footer .wrapper .button:nth-child(2) span{color: #1DA1F2;}
-footer .wrapper .button:nth-child(3) span{color: #E1306C;}
+footer .socials .button:nth-child(1) i{color: #4267B2;}
+footer .socials .button:nth-child(2) i{color: #1DA1F2;}
+footer .socials .button:nth-child(3) i{color: #E1306C;}
 
+footer .socials .button:hover i {
+	color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+footer .socials .button:nth-child(1):hover i{background-color: #4267B2;}
+footer .socials .button:nth-child(2):hover i{background-color: #1DA1F2;}
+footer .socials .button:nth-child(3):hover i{background-color: #E1306C;}
